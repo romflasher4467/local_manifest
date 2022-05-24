@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<manifest>
+
+
+<remote name="romflasher4467"
+
+fetch="https://github.com/romflasher4467" />
+
+<remote name="stormbreaker"
+
+fetch="https://github.com/stormbreaker-project" />
+
+<!-- device trees -->
+
+<project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="romflasher4467" revision="aosp" clone-depth="1" />
+
+<project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="romflasher4467" revision="12" clone-depth="1" />
+<remote  name="clang"     fetch="https://github.com/kdrag0n" />
+ 
+<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
+
+
+<!-- kernel -->
+
+
+<project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="romflasher4467" revision="qti-oldcam-eas" clone-depth="1" />
+
+ 
+</manifest>
+ 
